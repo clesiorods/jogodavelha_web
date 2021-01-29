@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(32, 173, 255);
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+
+div#tabuleiro {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    gap: 20px;
+}
+
+
+div.celula {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(253, 0, 0);
+    box-sizing: border-box;
+}
+div.celula:hover{
+    background-image: radial-gradient(rgba(255, 255, 255, 0.233), rgba(255, 255, 255, 0));
+}
+
+div.ponto {
+    background-color: rgba(0, 32, 70, 1);
+    height: 26px;
+    width: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 13px;
+    margin-top: 63px;
+    transition: .3s all;
+    opacity: .03;
+}
+
+
+div.eixo45 {
+    background-color: rgba(0, 32, 70, .1);
+    transform: rotate(45deg);
+    height: 26px;
+    width: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 13px;
+    margin-top: 63px;
+    transition: .15s all;
+}
+div.eixo90 {
+    background-color: rgba(0, 32, 70, .1);
+    transform: rotate(90deg);
+    height: 26px;
+    width: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 13px;
+    margin-top: 63px;
+    transition: .15s all;
+}
+
+div.circulo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 24px solid rgb(0, 32, 70);
+    margin: 16.5px;
+    transition: .15s all;
+}
