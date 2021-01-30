@@ -20,6 +20,7 @@ div.celula {
     width: 150px;
     background-color: rgb(253, 0, 0);
     box-sizing: border-box;
+    transition: .5s all;
 }
 div.celula:hover{
     background-image: radial-gradient(rgba(255, 255, 255, 0.233), rgba(255, 255, 255, 0));
