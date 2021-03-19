@@ -8,7 +8,7 @@ var q7 = tabuleiro.children[6];
 var q8 = tabuleiro.children[7];
 var q9 = tabuleiro.children[8];
 var rodada = 1;
-
+venceu = false;
 
 
 function jogar(pos) {
@@ -28,11 +28,10 @@ function jogar(pos) {
         tabuleiro.children[pos].children[0].appendChild(novo_eixo_2);
     }
     rodada++;
-    if(rodada > 9) {
+    if(rodada > 9 && venceu == false) {
         setTimeout( () => {window.alert("Empate!")}, 1000);
     }
 }
-
 
 
 function vitoria() {
@@ -97,9 +96,12 @@ function vitoria() {
 function quemGanhou(p) {
     if(p === "X"){
         setTimeout(() => {window.alert("Votória do X!")}, 500);
+        venceu = true;
         return true;
+
     } else if(p === "O") {
         setTimeout(() => {window.alert("Votória do O!")}, 500);
+        venceu = true;
         return true;
     }
 }
